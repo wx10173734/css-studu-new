@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body{
+            background-color: antiquewhite;
+        }
+        /*设置外部ul样式*/
+        .img-list{
+            /*设置ul宽度*/
+            width: 190px;
+            /*设置ul高度*/
+            height: 470px;
+            /*裁减溢出内容*/
+            overflow: hidden;
+
+            /*使ul在页面中居中*/
+            margin: 50px auto;
+        }
+        .img-list li:not(:last-child){
+            margin-bottom: 9px;
+        }
+
+        .img-list img{
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+<ul class="img-list">
+    <li><a href=""><img src="img/1.jpg" alt=""></a></li>
+    <li><a href=""><img src="img/2.jpg" alt=""></a></li>
+    <li><a href=""><img src="img/3.jpg" alt=""></a></li>
+</ul>
+
+</body>
+</html>

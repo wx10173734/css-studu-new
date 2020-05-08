@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            /*
+                颜色单位:
+                    在css中可以直接使用颜色名设置各种颜色
+
+                RGB值:
+                    -RGB通过三种颜色的不同浓度来调配处不同的颜色
+                    -R red G green B blue
+                    -每一种颜色的范围在 0-255 (0%-100%之间)
+                    -语法 RGB(红色,绿色,蓝色)
+
+                RGBA:
+                    -就是在rbg的基础上增加了一个a表示不透明度
+                    -需要四个值，前三个和rgb一样,第四个表示不透明度
+                    -1表示完全不透明 0表示完全透明 .5半透明
+
+
+                十六进制:
+                    -语法 #红色绿色蓝色
+                    -颜色浓度通过 00-ff
+                    -如果颜色两位两位重复,可简写
+
+                HSL HSLA值
+                    H 色相 (0-360)
+                    S 饱和度 颜色浓度 0-100
+                    L 亮度 颜色亮度 0-100
+
+            */
+            /*background-color: rgb(255,255,255);*/
+            /*background-color: rgb(33, 33, 33);*/
+            /*background-color: #bfa;*/
+            background-color: hsl(69,100%,70%);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>
