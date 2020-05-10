@@ -7,40 +7,83 @@
         *{
             margin: 0;
             padding: 0;
-            list-style: none;
+            text-decoration: none;
         }
-        body{
-            background-color: antiquewhite;
-        }
-        /*设置外部ul样式*/
-        .img-list{
-            /*设置ul宽度*/
-            width: 190px;
-            /*设置ul高度*/
-            height: 470px;
-            /*裁减溢出内容*/
-            overflow: hidden;
-
-            /*使ul在页面中居中*/
+        .box_sport{
+            width: 300px;
+            height: 324px;
             margin: 50px auto;
+            border-top: 1px solid #ddd;
         }
-        .img-list li:not(:last-child){
-            margin-bottom: 9px;
+        .sport_title{
+            height: 42px;
+            line-height: 42px;
         }
+        .sport{
+            display: inline-block;
+            color: black;
+            font-weight: bold;
+            border-top: 1px solid red;
+            margin-top: -1px;
+        }
+        .sport:hover{
+            color: red;
+        }
+        .box_sport_img{
+            height: 150px;
+        }
+        .box_sport_img .img_text{
+            margin-top: -35px;
+            padding-left: 15px;
+            color: white;
+        }
+        .box_sport_text{
+            margin-top: 10px;
 
-        .img-list img{
-            width: 100%;
         }
+        .text_li{
+            font-size: 14px;
+            padding-bottom: 8px;
+            list-style: none;
 
+        }
+        .text_li::before{
+            content: '■';
+            color: #d9d9d9;
+            margin-right: 8px;
+        }
+        .text_li>a{
+            color: black;
+        }
+        .text_li>a:hover{
+            color: red;
+        }
     </style>
 </head>
 <body>
 
-<ul class="img-list">
-    <li><a href=""><img src="img/1.jpg" alt=""></a></li>
-    <li><a href=""><img src="img/2.jpg" alt=""></a></li>
-    <li><a href=""><img src="img/3.jpg" alt=""></a></li>
-</ul>
+<div class="box_sport">
+    <div class="sport_title">
+        <h2 class="sport">
+            <a href="">体育</a>
+        </h2>
+    </div>
+
+    <div class="box_sport_img">
+        <a href="#">
+            <img src="img/4.jpg" alt="">
+            <h3 class="img_text">老当益壮！施瓦辛格与朋友骑行</h3>
+        </a>
+    </div>
+    <div class="box_sport_text">
+        <ul>
+            <li class="text_li"><a href="">乔治:我爱LA 喜欢和LBJ一起打球</a></li>
+            <li class="text_li"><a href="">格林:3年前降薪就在等KD 特制T恤嘲讽LBJ</a></li>
+            <li class="text_li"><a href="">塔克4000双鞋让保罗羡慕嫉妒 乔丹被震惊</a></li>
+            <li class="text_li"><a href="">CBA下季新赛制:常规赛4组循环 增至46轮</a></li>
+        </ul>
+    </div>
+</div>
 
 </body>
 </html>
