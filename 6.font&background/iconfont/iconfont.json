@@ -1,0 +1,51 @@
+{
+  "id": "1819991",
+  "name": "css-study",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "8106224",
+      "name": "down",
+      "font_class": "down",
+      "unicode": "e69b",
+      "unicode_decimal": 59035
+    },
+    {
+      "icon_id": "8106245",
+      "name": "close",
+      "font_class": "close",
+      "unicode": "e69e",
+      "unicode_decimal": 59038
+    },
+    {
+      "icon_id": "8106260",
+      "name": "upward",
+      "font_class": "upward",
+      "unicode": "e6a1",
+      "unicode_decimal": 59041
+    },
+    {
+      "icon_id": "8106272",
+      "name": "next",
+      "font_class": "next",
+      "unicode": "e6a2",
+      "unicode_decimal": 59042
+    },
+    {
+      "icon_id": "10678401",
+      "name": "back",
+      "font_class": "back",
+      "unicode": "e6db",
+      "unicode_decimal": 59099
+    },
+    {
+      "icon_id": "10678407",
+      "name": "close",
+      "font_class": "close1",
+      "unicode": "e6dc",
+      "unicode_decimal": 59100
+    }
+  ]
+}

@@ -3,19 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            width: 590px;
+            height: 470px;
+        }
+        .img-list{
+            margin:100px auto;
+             position: relative;
+
+        }
+        .img-list > li {
+            position: absolute;
+        }
+        .img-list li:nth-child(4){
+            z-index: 1;
+        }
+
+        .pointer{
+            position: absolute;
+            top: 450px;
+            z-index: 999;
+
+        }
+        .pointer>a{
+            float: left;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,.3);
+            /*将背景颜色设置到内容区,边框和内边距不再有背景颜色*/
+            background-clip: content-box;
+            border: 1px solid transparent;
+            margin-left: 10px;
+
+        }
+        .pointer a.active,.pointer a:hover{
+            background-color: #fff;
+            border: 1px solid rgba(255,255,255,.3);
+        }
+
+
+    </style>
 </head>
 <body>
-    <div class="pic">
-        <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-        </ul>
-    </div>
+    <ul class="img-list">
+        <li><a href=""><img src="img/1.jpg" alt=""></a></li>
+        <li><a href=""><img src="img/2.jpg" alt=""></a></li>
+        <li><a href=""><img src="img/3.jpg" alt=""></a></li>
+        <li><a href=""><img src="img/4.jpg" alt=""></a></li>
+        <li><a href=""><img src="img/5.jpg" alt=""></a></li>
+        <li><a href=""><img src="img/6.jpg" alt=""></a></li>
+        <li><a href=""><img src="img/7.jpg" alt=""></a></li>
+        <li><a href=""><img src="img/8.jpg" alt=""></a></li>
+
+
+        <div class="pointer">
+            <a class="active" href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </div>
+    </ul>
+
+
+
+
 </body>
 </html>

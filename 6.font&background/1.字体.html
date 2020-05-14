@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*font-face可以将服务器中的字体直接提供给用户去使用*/
+        @font-face {
+            /*指定字体的名字*/
+            font-family: 'myfont' ;
+            src: url("") format("truetype ");
+        }
+        p{
+            /*字体相关样式
+                color 设置字体颜色
+                font-size 字体大小
+                    和font-size相关的单位
+                    em 相当于当前元素的一个font-size
+                    rem 相对于根元素的一个font-size
+                font-family（字体族-字体格式）
+                    可选值:
+                        serif 衬线字体
+                        sans-serif  非衬线字体
+                        monospace 等宽字体
+                            -指定字体的类别,浏览器会自动使用改类别下的字体
+
+                font-family 可以同时指定多个字体,多个字体间使用,隔开
+                    字体生效时优先使用第一个,第一个无法使用则使用第二个以此类推
+            */
+            color: red;
+            font-size: 30px;
+            font-family:myfont;
+        }
+    </style>
+</head>
+<body>
+    <p>今天天气真好, hello hello how are you </p>
+</body>
+</html>
