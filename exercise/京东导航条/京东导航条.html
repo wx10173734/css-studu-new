@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <style>
+        body{
+            color: #999999;
+            font: 12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;
+        }
+        i.iconfont{
+            font-size: 12px;
+        }
+        .clearfix::before,.clearfix::after{
+            content: '';
+            display: table;
+            clear: both;
+
+        }
+        .top-bar-wrapper{
+            width: 100%;
+            background-color: #f4f4f4;
+            height: 30px;
+            /*设置行高,没有设置高度,使文字垂直居中*/
+            line-height: 30px;
+            border-bottom: 1px #dddddd solid;
+        }
+        .top_bar{
+            /*固定宽度*/
+            width: 1190px;
+            /*设置水平居中*/
+            margin: 0 auto;
+        }
+
+        .top_bar a,.top_bar i{
+            color: #999999;
+            text-decoration: none;
+        }
+        .top_bar a:hover,a.highlight{
+            color: #F10215;
+        }
+
+        .location{
+            float: left;
+        }
+
+        /*设置城市列表效果*/
+        .location .city_list{
+            display: none;
+            width: 320px;
+            height: 436px;
+            background-color: white;
+            border: 1px solid rgb(204,204,204);
+            /*border-top: none;*/
+            /*设置绝对定位,使其不占据页面位置*/
+            position: absolute;
+            top: 30px;
+            box-shadow: 0 2px 2px rgba(0,0,0,.2);
+            z-index: 999;
+        }
+        .location:hover .city_list{
+            display: block;
+        }
+        .current-city{
+            padding: 0 10px;
+            position: relative;
+            border: 1px solid transparent;
+            border-bottom: none;
+            z-index: 9999;
+        }
+        .location:hover .current-city{
+            background-color: white;
+            padding-bottom: 1px;
+        }
+        .province .iconfont{
+            color:#F10215 ;
+        }
+        .shortcut{
+            float: right;
+        }
+        /*设置分割线*/
+        li.line{
+            width: 1px;
+            height: 10px;
+            background-color: #cccccc;
+            margin-top: 10px;
+        }
+        .shortcut>li{
+            float: left;
+            margin-left: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="top-bar-wrapper">
+        <div class="top_bar clearfix">
+            <!--左侧菜单-->
+            <div class="location">
+                <div class="current-city">
+                    <a class="province" href="#">
+                        <i class="iconfont">&#xe630;</i>
+                        江苏
+                    </a>
+                </div>
+
+                <!--放置城市列表的div-->
+                <div class="city_list">
+
+                </div>
+            </div>
+
+            <!--右侧菜单-->
+                <ul class="shortcut clearfix">
+                    <li>
+                        <a href="">你好,请登录</a>
+                        <a class="highlight" href="">免费注册</a>
+                    </li>
+                    <!--分割线-->
+                    <li class="line"></li>
+                    <li>
+                        <a href="">我的订单</a>
+                        <i class="iconfont">&#xe69b;</i>
+                    </li>
+
+                    <li class="line"></li>
+                    <li>
+                        <a href="">我的京东</a>
+                        <i class="iconfont">&#xe69b;</i>
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <a href="">京东会员</a>
+                        <i class="iconfont">&#xe69b;</i>
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <a class="highlight" href="">企业采购</a>
+                        <i class="iconfont">&#xe69b;</i>
+                    </li>
+                    <li class="line"></li>
+                    <li>客户服务
+                        <i class="iconfont">&#xe69b;</i>
+                    </li>
+                    <li class="line"></li>
+                    <li>网站导航
+                        <i class="iconfont">&#xe69b;</i>
+                    </li>
+                    <li class="line"></li>
+                    <li>手机京东</li>
+                </ul>
+
+        </div>
+    </div>
+</body>
+</html>

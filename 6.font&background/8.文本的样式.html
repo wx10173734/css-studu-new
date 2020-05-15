@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box1{
+            font-size: 50px;
+            font-family: 微软雅黑;
+            /*
+                text-decoration 设置文本修饰
+                    可选值:
+                        none 什么都没有
+                        underline 下划线
+                        line-through 删除线
+                        overline 上划线
+
+             */
+            text-decoration: underline red ;
+
+        }
+        .box2{
+            width: 200px;
+            /*
+                white-space 设置网页如何处理空白
+                    可选值：
+                        normal 正常
+                        nowrap 不换行
+                        pre 保留空白
+                text-overflow: ellipsis; 表示溢出内容设置省略号
+
+            */
+            white-space:nowrap ;
+            overflow: hidden;
+
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        今天天气不错
+    </div>
+<div class="box2">
+    hellohellohello
+         hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello
+</div>
+</body>
+</html>
